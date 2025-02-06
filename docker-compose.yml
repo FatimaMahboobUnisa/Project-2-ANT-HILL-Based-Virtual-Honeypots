@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  honeypot:
+    build: .
+    ports:
+      - "5000:5000"
+    networks:
+      - honeynet
+
+  attacker:
+    build: .
+    command: python ddos_simulator.py
+    networks:
+      - honeynet
+
+networks:
+  honeynet:
+    driver: bridge
