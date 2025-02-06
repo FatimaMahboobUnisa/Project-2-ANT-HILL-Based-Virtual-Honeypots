@@ -1,0 +1,7 @@
+.
+├── honeypot_server.py       # Flask-based honeypot
+├── ddos_simulator.py        # DDoS attack simulator
+├── Dockerfile               # Containerization setup
+├── docker-compose.yml       # Multi-container orchestration
+├── requirements.txt         # Dependency list
+└── README.md                # Project documentation
